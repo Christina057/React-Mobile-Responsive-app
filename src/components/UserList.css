@@ -1,0 +1,71 @@
+.user-list-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+@media screen and (max-width: 412px) and (max-height: 914px) {
+  .user-list-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 390px) and (max-height: 834px) {
+  .user-list-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+.user-list-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out; 
+}
+
+input:focus {
+  border-color: #6e45e2;
+}
+
+button {
+  background-color: #6e45e2;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #4b2d8e;
+}
+
+h1 {
+  color: #333;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+.middle-footer {
+  position: absolute;
+  margin-top: 330px;
+  margin-right: 750px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}

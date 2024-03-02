@@ -1,0 +1,119 @@
+.dashboard-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-card {
+  width: 80%; 
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 412px) and (max-height: 914px) {
+  .dashboard-container,
+  .dashboard-card {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) and (max-height: 834px) {
+  .dashboard-container,
+  .dashboard-card {
+    width: 90%;
+    padding: 10px;
+  }
+}
+.bar-container {
+  margin-bottom: 20px;
+}
+
+.bar {
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  height: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar:hover:before {
+  transform: scaleX(1);
+}
+
+.dashboard-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6e45e2;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  background-color: initial;
+  color: #6e45e2;
+}
+
+.nav-link svg {
+  transition: none !important;
+}
+
+h1 {
+  color: #333;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 15px;
+}
+
+.middle-footer {
+  position: absolute;
+  margin-bottom: 1289px;
+  margin-left: 210px;
+  transform: translate(-50%, -50%);
+  background-color: #fff; 
+  text-align: center;
+}
